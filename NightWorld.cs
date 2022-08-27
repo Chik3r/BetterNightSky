@@ -6,9 +6,9 @@ using Microsoft.Xna.Framework;
 
 namespace BetterNightSky
 {
-	public class NightWorld : ModWorld
+	public class NightWorld : ModSystem
 	{
-		public override void PreUpdate()
+		public override void PreUpdateWorld()
 		{
 			foreach (KeyValuePair<CelestialObject, int> pair in BetterNightSky.CelestialIndex)
 			{
